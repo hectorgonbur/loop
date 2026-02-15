@@ -454,7 +454,7 @@ def main():
     if st.session_state.user_id is None:
         login_page()
     else:
-        st.sidebar.title("ARCHI-HUB")
+        st.sidebar.title("LOOP")
         menu = st.sidebar.radio(
             "Navegación",
             ["Mi Cursada", "Feed Social", "Perfil", "Recursos", "Ranking"]
