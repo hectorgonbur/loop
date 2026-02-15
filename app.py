@@ -351,9 +351,11 @@ def profile_page():
     if user_posts:
         cols = st.columns(3)
         for i, post in enumerate(user_posts):
+            # Cambia esto en tu función profile_page:
             with cols[i % 3]:
                 if post.image:
-                    st.image(post.image, use_container_width=True)
+                    # Usa un borde y ajusta el tamaño para que parezca una grilla de Instagram
+                    st.image(post.image, use_container_width=True, caption=f"Materia: {materia}")
                 else:
                     st.write("Imagen no disponible")
     else:
