@@ -192,8 +192,8 @@ def get_progress_for_subject(user_id, subject_id):
 # Página de login / registro
 # ----------------------------
 def login_page():
-    st.title("ARCHI-HUB FAU UNLP")
-    st.markdown("Bienvenido a la plataforma de organización y comunidad para estudiantes de arquitectura.")
+    st.title("LOOP")
+    st.markdown("Bienvenido a la plataforma de organización y comunidad para estudiantes.")
 
     with st.form("login_form"):
         name = st.text_input("Nombre")
@@ -472,7 +472,7 @@ def main():
             ranking_page()
 
 if __name__ == "__main__":
-    st.set_page_config(page_title="ARCHI-HUB FAU", layout="wide")
+    st.set_page_config(page_title="LOOP", layout="wide")
     # Modo oscuro por defecto (Streamlit ya lo respeta según configuración del sistema)
     # Forzamos tema oscuro con CSS personalizado (opcional)
     st.markdown("""
